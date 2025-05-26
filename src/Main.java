@@ -30,13 +30,10 @@ public class Main {
         vehiculo2.proximoServicio();
 
         Cuenta cuenta1 = new Cuenta("100", 10000, "Juan Hernandez");
-        Cuenta cuenta2 = new Cuenta("101", 30000, "Pedro Perez");
 
+        cuenta1.depositar(10000);
         cuenta1.retirar(5000);
         cuenta1.consultarSaldo();
-
-        cuenta2.depositar(10000);
-        cuenta2.consultarSaldo();
 
     }
 }

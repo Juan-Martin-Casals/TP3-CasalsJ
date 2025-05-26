@@ -44,7 +44,7 @@ public class Cuenta {
 
         System.out.println("Fecha: " + fechaFormateada);
         System.out.println("Tipo de transaccion: " + tipo);
-        System.out.println("Monto: " + monto + "$");
+        System.out.println("Monto: " + monto + "$\n");
 
     }
 
