@@ -22,7 +22,7 @@ public abstract class Cliente implements PrestamoCalculable {
     }
 
 
-    //GETTERS
+
     public String getNombre() {
         return nombre;
     }
@@ -42,7 +42,7 @@ public abstract class Cliente implements PrestamoCalculable {
         return fechaPago;
     }
 
-    //SETTERS
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -62,7 +62,7 @@ public abstract class Cliente implements PrestamoCalculable {
         this.fechaPago = fechaPago;
     }
 
-    //MOSTRAR INFORMACION
+
     public void mostrarInformacion(){
         System.out.println("Nombre del cliente: " + nombre);
         System.out.println("Monto solicitado: " + montoSolicitado);
@@ -72,7 +72,7 @@ public abstract class Cliente implements PrestamoCalculable {
     }
 
 
-    //CALCULAR MESES
+
     public  int calcularMeses(LocalDate fechaPrestamo, LocalDate fechaPago){
         long meses = ChronoUnit.MONTHS.between(fechaPrestamo, fechaPago);
 
@@ -82,7 +82,7 @@ public abstract class Cliente implements PrestamoCalculable {
     @Override
     public abstract double calcularInteres(double monto, int meses);
 
-    //CALCULAR MONTO CON INTERES Y MULTA SI ES QUE HAY
+
 
     public double calcularMontoConInteresYMulta(){
         int meses= calcularMeses(fechaPrestamo, fechaPago);
